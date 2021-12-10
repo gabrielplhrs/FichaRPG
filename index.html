@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="perfiljogador.css">
+    <link rel="stylesheet" href="style/perfiljogador.css">
+    <link rel="icon" href="img/d20icon.png">
     <title>Perfil do Jogador</title>
 </head>
 <body>
@@ -22,7 +23,11 @@
                     <label for="idade">Idade</label>
                     <input type="number">
                     <label for="sexo">Sexo</label>
-                    <input type="text">
+                    <select name="sexo" id="sexo">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Indefinido">Indefinido</option>
+                    </select>
                     <label for="ocupacao">Ocupação</label>
                     <input type="text">
                     <label for="localResidencia">Local de Residência</label>
@@ -31,12 +36,12 @@
         </div>
         <div id="statusJogador">
             <div id="playerPicAndDice">
-                <img class="circle-image" src="nishnoya.jpg" />
-                <img class="d20-image" src="d20.png"/>
+                <img class="circle-image" src="img/nishnoya.jpg" />
+                <img class="d20-image" src="img/d20.png"/>
             </div>
             <div id="playerLife">
-                <label for="lifeBar"></label>
-                <span id="lifeBar" class="progress-bar" ></span>
+                <h3>Vida</h3>
+                <span id="lifeBar" class="life-progress-bar" ></span>
                 <input type="radio" id="lesaoGrave" value="Lesão Grave">
                 <label for="lesaoGrave">Lesão Grave</label>
                 <input type="radio" id="inconsciente" value="Inconsciente">
@@ -45,8 +50,9 @@
                 <label for="morrendo">Morrendo</label>
             </div>
             <div id="playerSanity">
+                <h3>Sanidade</h3>
                 <label for="sanityBar"></label>
-                <span id="sanityBar" class="progress-bar" ></span>
+                <span id="sanityBar" class="sanity-progress-bar" ></span>
                 <input type="radio" id="traumatizado" value="Traumatizado">
                 <label for="traumatizado">Traumatizado</label>
                 <input type="radio" id="enlouquecido" value="Enlouquecido">
@@ -56,48 +62,51 @@
     </section>
     <section id="atributosAndEquipamentos">
         <div id="atributos">
-            <h2>Atributos</h2>
+            <header>
+             <h2>Atributos</h2>
+             <button>+</button>
+            </header>
                 <div id="formsAtributos">
                     <div class="atributosRow">
                         <span class="atributo">
-                            <img class="d20-image" src="d20.png"/>
+                            <img class="d20-image" src="img/d20.png"/>
                             <label for="aparencia">Aparência</label>
                             <input type="text">
                         </span>
                         <span class="atributo">
-                            <img class="d20-image" src="d20.png"/>
+                            <img class="d20-image" src="img/d20.png"/>
                             <label for="constituicao">Constituição</label>
                             <input type="text">
                         </span>
                         <span class="atributo">
-                            <img class="d20-image" src="d20.png"/>
+                            <img class="d20-image" src="img/d20.png"/>
                             <label for="destreza">Destreza</label>
                             <input type="text">
                         </span>
                         <span class="atributo">
-                            <img class="d20-image" src="d20.png"/>
+                            <img class="d20-image" src="img/d20.png"/>
                             <label for="educacao">Educação</label>
                             <input type="text">
                         </span>
                     </div>
                     <div class="atributosRow">
                         <span class="atributo">
-                            <img class="d20-image" src="d20.png"/>
+                            <img class="d20-image" src="img/d20.png"/>
                             <label for="forca">Força</label>
                             <input type="text">
                         </span>
                         <span class="atributo">
-                            <img class="d20-image" src="d20.png"/>
+                            <img class="d20-image" src="img/d20.png"/>
                             <label for="inteligencia">Inteligência</label>
                             <input type="text">
                         </span>
                         <span class="atributo">
-                            <img class="d20-image" src="d20.png"/>
+                            <img class="d20-image" src="img/d20.png"/>
                             <label for="poder">Poder</label>
                             <input type="text">
                         </span>
                         <span class="atributo">
-                            <img class="d20-image" src="d20.png"/>
+                            <img class="d20-image" src="img/d20.png"/>
                             <label for="sorte">Sorte</label>
                             <input type="text">
                         </span>

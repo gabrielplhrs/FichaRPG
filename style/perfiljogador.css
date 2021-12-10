@@ -60,12 +60,25 @@ body{
     font-size: 12px;
 }
 
-#playerPicAndDice{
-    margin-top: 20px;
+#playerPicAndDice{  
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+}
+
+#statusJogador h3 {
+  margin: 0px;
+  margin-bottom: 2px;
+  font-size: 16px;
+}
+
+#playerSanity{
+  padding: 10px;
+}
+
+#playerLife{
+  padding: 10px;
 }
 
 .circle-image {
@@ -81,22 +94,22 @@ body{
     height: 50px;
 }
 
-.progress-bar{
+.life-progress-bar{
     /* vamos declarar nossa
       variável com o nome de
       "progress". Ela terá seu
       valor entre 0 e 100.
       */
-    --progress: 50;
+    --progress: 70;
     height: 20px;
     width:300px;
     padding: 2px;
-    background-color: rgb(60, 18, 18);
+    background-color: rgb(19, 3, 3);
     display: flex;
     border-radius: 2px;
   }
   
-  .progress-bar::before{
+  .life-progress-bar::before{
     content: "";
     /* aqui estamos chamando
       nossa variável. Como a
@@ -108,6 +121,35 @@ body{
       */
     width: calc(var(--progress) * 1%);
     background-color: rgb(172, 9, 9);
+  }
+
+  .sanity-progress-bar{
+    /* vamos declarar nossa
+      variável com o nome de
+      "progress". Ela terá seu
+      valor entre 0 e 100.
+      */
+    --progress: 100;
+    height: 20px;
+    width:300px;
+    padding: 2px;
+    background-color: rgb(21, 5, 5);
+    display: flex;
+    border-radius: 2px;
+  }
+  
+  .sanity-progress-bar::before{
+    content: "";
+    /* aqui estamos chamando
+      nossa variável. Como a
+      largura do pseudo-elemento
+      estará entre 0% e 100%, temos
+      que converter o valor da nossa
+      variável em porcentagem. Para
+      isso, basta multiplicar por 1%.
+      */
+    width: calc(var(--progress) * 1%);
+    background-color: rgb(44, 11, 167);
   }
 
   #atributosAndEquipamentos {
@@ -125,13 +167,18 @@ body{
   }
 
   #atributos h2{
-    padding-bottom: 10px;
     margin: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid rgb(100, 100, 100);
   }
+
+  #atributos header{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: none;
+    border-bottom: 1px solid rgb(100, 100, 100);
+}
 
   .atributosRow{
       display: flex;
@@ -166,6 +213,8 @@ body{
       justify-content: center;
       align-items: center;
       flex-direction: row;
+      border: none;
+      border-bottom: 1px solid rgb(100, 100, 100);
   }
 
   #equipamentosEPertences h2{

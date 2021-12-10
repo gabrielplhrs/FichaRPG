@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Readex+Pro:wght@500&display=swap');
+
+* {
+    color: white;
+    background: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
