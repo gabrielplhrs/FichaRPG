@@ -41,10 +41,15 @@ h2, h3{
 
 .jogadores h2{
     font-size: 18px;
-    margin: 10px;
+    margin: 5px;
 }
 
 .jogadores h3{
     font-size: 14px;
 
+}
+
+.iconJogador{
+    border-radius: 50%;
+    width: 120px;
 }
