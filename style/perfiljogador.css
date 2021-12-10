@@ -94,6 +94,11 @@ body{
     height: 50px;
 }
 
+.d20-image-status{
+  width: 75px;
+  height: 75px;
+}
+
 .life-progress-bar{
     /* vamos declarar nossa
       variável com o nome de

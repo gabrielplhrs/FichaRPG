@@ -15,14 +15,18 @@ body{
     flex-direction: column;
 }
 
-.todasMesas{
+h2, h3{
+    margin: 0px;
+}
+
+.todosJogadores{
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
 }
 
-.mesas {
+.jogadores {
     border: 1px solid rgb(99, 99, 99);
     border-radius: 10px;
     padding: 40px;
@@ -31,18 +35,16 @@ body{
     justify-content: center;
     flex-direction: column;
     margin: 10px;
+    max-width: 300px;
+    max-height: 150px;
 }
 
-/* .mesas:hover {
-    color: rgb(255, 14, 14);
-} */
-
-.mesas h3{
-    margin: 0px;
+.jogadores h2{
+    font-size: 18px;
+    margin: 10px;
 }
 
-.iconCampanha {
-    border-radius: 50%;
-    width: 150px;
-    border: white;
+.jogadores h3{
+    font-size: 14px;
+
 }
