@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Readex+Pro:wght@500&display=swap');
+
+* {
+    color: white;
+    background: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#detalhesAndStatus {
+    display: flex;
+    flex-direction: row ;
+}
+
+#detalhesPessoais, #statusJogador{
+    margin: 20px;
+}
+
+#detalhesPessoais {
+    border: 1px solid rgb(100, 100, 100);
+    padding: 20px;
+    width: 300px;
+}
+
+#detalhesPessoais h2 {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#detalhesPessoais input {
+    border: none;
+    border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+#formularioDetalhesPessoais {
+    display: flex;
+    flex-direction: column;
+}
+
+#formularioDetalhesPessoais label {
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+#statusJogador{
+    padding: 20px;
+}
+
+#statusJogador label, #statusJogador input{
+    font-size: 12px;
+}
+
+#playerPicAndDice{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.circle-image {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    border: 1px solid white;
+}
+
+.d20-image {
+    width: 50px;
+    height: 50px;
+}
+
+.progress-bar{
+    /* vamos declarar nossa
+      variável com o nome de
+      "progress". Ela terá seu
+      valor entre 0 e 100.
+      */
+    --progress: 50;
+    height: 20px;
+    width:300px;
+    padding: 2px;
+    background-color: rgb(60, 18, 18);
+    display: flex;
+    border-radius: 2px;
+  }
+  
+  .progress-bar::before{
+    content: "";
+    /* aqui estamos chamando
+      nossa variável. Como a
+      largura do pseudo-elemento
+      estará entre 0% e 100%, temos
+      que converter o valor da nossa
+      variável em porcentagem. Para
+      isso, basta multiplicar por 1%.
+      */
+    width: calc(var(--progress) * 1%);
+    background-color: rgb(172, 9, 9);
+  }
+
+  #atributosAndEquipamentos {
+    display: flex;
+    flex-direction: row ;
+}
+
+  #atributos, #equipamentosEPertences{
+    margin: 8px;
+    }
+
+  #atributos{
+    border: 1px solid rgb(100, 100, 100);
+    padding: 20px;
+  }
+
+  #atributos h2{
+    padding-bottom: 10px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(100, 100, 100);
+  }
+
+  .atributosRow{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+  }
+
+  .atributo{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  #formsAtributos input {
+    margin-top: 3px;
+    width:40px;
+    border: none;
+    border-bottom: 1px solid rgb(100, 100, 100);
+  }
+
+  #equipamentosEPertences{
+    border: 1px solid rgb(100, 100, 100);
+    padding: 20px;
+  }
+
+  #equipamentosEPertences header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+  }
+
+  #equipamentosEPertences h2{
+      margin: 0px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      
+  }
