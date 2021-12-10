@@ -40,3 +40,9 @@ body{
 .mesas h3{
     margin: 0px;
 }
+
+.iconCampanha {
+    border-radius: 50%;
+    width: 150px;
+    border: white;
+}

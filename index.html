@@ -9,8 +9,10 @@
     <title>Perfil do Jogador</title>
 </head>
 <body>
+    <script src="scripts/script.js"></script>
     <header>
         <h1>Perfil do Jogador</h1>
+        <div id="resp"></div>
     </header>
     <section id="detalhesAndStatus">
         <div id="detalhesPessoais">
@@ -36,8 +38,8 @@
         </div>
         <div id="statusJogador">
             <div id="playerPicAndDice">
-                <img class="circle-image" src="img/nishnoya.jpg" />
-                <img class="d20-image" src="img/d20.png"/>
+                <img class="circle-image" src="img/teste.png" />
+                <img class="d20-image" onclick="jogar()" src="img/d20.png"/>
             </div>
             <div id="playerLife">
                 <h3>Vida</h3>
@@ -110,6 +112,8 @@
                             <label for="sorte">Sorte</label>
                             <input type="text">
                         </span>
+                    </div>
+                    <div id="novosAtributos "class="atributosRow">
                     </div>
                 </div>
             </div>
