@@ -117,21 +117,73 @@
             <div id="equipamentosEPertences">
                 <header>
                     <h2>Equipamentos e pertences</h2>
-                    <button>+</button>
+                    <button class="botaoAdicionar" onclick="openModal()">+</button>
                 </header>
                     <div id="formularioDetalhesPessoais">
-                        <form action=""></form>
+                        <table id="equipamentTable">
+                            <tr>
+                              <th>Equipamento</th>
+                              <th>Quantidade</th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Smartphone</td>
+                              <td>1</td>
+                              <td><button class="botaoApagar" onclick='removeLinhaEquipamento(this)'><img src="img/delete.png" width="17px" height="17px"></button></td>
+                            </tr>
+                            <tr>
+                              <td>Corda</td>
+                              <td>1</td>
+                              <td><button class="botaoApagar" onclick='removeLinhaEquipamento(this)'><img src="img/delete.png" width="17px" height="17px"></button></td>
+                            </tr>
+                          </table>
                     </div>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                </div>
             </div>
     </section>
     <section>
         <div id="tabelaCombate">
             <header>
                 <h2>Combate</h2>
-                <button>+</button>
+                <button class="botaoAdicionar">+</button>
             </header>
                 <div id="">
-                    <form action=""></form>
+                    <table id="combatTable">
+                        <tr>
+                          <th>Arma</th>
+                          <th>Valores</th>
+                          <th>Dano</th>
+                          <th>Mun. Atual</th>
+                          <th>Mun. Máx</th>
+                          <th>Ataques</th>
+                          <th></th>
+                        </tr>
+                        <tr>
+                          <td>Faca</td>
+                          <td>22</td>
+                          <td>53</td>
+                          <td>1</td>
+                          <td>13</td>
+                          <td></td>
+                          <td><button class="botaoApagar" onclick='removeLinhaCombate(this)'><img src="img/delete.png" width="17px" height="17px"></button></td>
+                        </tr>
+                        <tr>
+                          <td>Pistola</td>
+                          <td>88</td>
+                          <td></td>
+                          <td>15</td>
+                          <td>23</td>
+                          <td></td>
+                          <td><button class="botaoApagar" onclick='removeLinhaCombate(this)'><img src="img/delete.png" width="17px" height="17px"></button></td>
+                        </tr>
+                      </table>
                 </div>
         </div>
     </section>
