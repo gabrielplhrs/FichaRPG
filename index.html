@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style/perfiljogador.css">
     <link rel="icon" href="img/d20icon.png">
     <title>Perfil do Jogador</title>
+    
 </head>
 <body>
-    <script src="scripts/script.js"></script>
     <header>
         <h1>Perfil do Jogador</h1>
         <div id="resp"></div>
@@ -117,7 +117,7 @@
             <div id="equipamentosEPertences">
                 <header>
                     <h2>Equipamentos e pertences</h2>
-                    <button class="botaoAdicionar" onclick="openModal()">+</button>
+                    <button id="myBtn" class="botaoAdicionar">+</button>
                 </header>
                     <div id="formularioDetalhesPessoais">
                         <table id="equipamentTable">
@@ -137,22 +137,35 @@
                               <td><button class="botaoApagar" onclick='removeLinhaEquipamento(this)'><img src="img/delete.png" width="17px" height="17px"></button></td>
                             </tr>
                           </table>
+                        
                     </div>
             </div>
             <!-- The Modal -->
             <div id="myModal" class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
+                    <header>
+                        <h2>Adicionar equipamento</h2>
+                    </header>
+                    <section id="formularioModalEquipamentos">
+                        <label for="equipamento">Equipamento</label>
+                        <input id="equipamento" type="text" value="">
+                        <label for="quantidade">Quantidade</label>
+                        <input id="quantidade" type="number" value="">
+                        <div>
+                            <button class="botaoCancelar , botoes">Cancelar</button>
+                            <button class="botaoConfirmar , botoes">Confirmar</button>
+                        </div>
+                    </section>
                 </div>
             </div>
+            
     </section>
     <section>
         <div id="tabelaCombate">
             <header>
                 <h2>Combate</h2>
-                <button class="botaoAdicionar">+</button>
+                <button class="botaoAdicionar , botaoAdicionarCombate">+</button>
             </header>
                 <div id="">
                     <table id="combatTable">
@@ -187,5 +200,6 @@
                 </div>
         </div>
     </section>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

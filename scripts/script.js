@@ -13,13 +13,14 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
-function openModal() {
+var cancelar = document.getElementsByClassName("botaoCancelar")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+cancelar.onclick = function() {
   modal.style.display = "none";
 }
 
@@ -42,22 +43,12 @@ function removeLinhaEquipamento(linha) {
   document.getElementById('equipamentTable').deleteRow(i);
 }
 
-// function addAula() {
-//   var table = document.getElementById("tbl");
-//   var row = table.insertRow(-1);
-//   var cell1 = row.insertCell(0);
-//   var cell2 = row.insertCell(1);
-//   var cell3 = row.insertCell(2);
-//   var cell4 = row.insertCell(3);
-//   var cell5 = row.insertCell(4);
-//   var cell6 = row.insertCell(5);
-//   var cell7 = row.insertCell(6);
-//   var cell8 = row.insertCell(7);
-//   cell1.innerHTML = document.getElementById('turma').value;
-//   cell2.innerHTML = document.getElementById('professor').value;
-//   cell3.innerHTML = document.getElementById('local').value;
-//   cell4.innerHTML = document.getElementById('disciplina').value;
-//   cell5.innerHTML = document.getElementById('dataInicio').value;
-//   cell6.innerHTML = document.getElementById('horarioInicio' + 'horarioFim').value;
-//   cell8.innerHTML = `<button class="crud" id="botaoEditar"><img src="img/edit.png"  width="16px" height="16px"></button> `+` <button class="crud" id="botaoApagar" onclick='removeLinha(this)'><img src="img/delete.png" width="17px" height="17px"></button>`;
-// }
+function adicionarEquipamento() {
+  var table = document.getElementById("tbl");
+  var row = table.insertRow(-1);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = document.getElementById('turma').value;
+  cell2.innerHTML = document.getElementById('professor').value;
+  cell8.innerHTML = `<td><button class="botaoApagar" onclick='removeLinhaEquipamento(this)'><img src="img/delete.png" width="17px" height="17px"></button></td>`;
+}

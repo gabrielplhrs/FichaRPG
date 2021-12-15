@@ -2,7 +2,7 @@
 
 * {
     color: white;
-    background: black;
+    background-color: black;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Readex Pro', sans-serif;
@@ -240,7 +240,6 @@ body{
       padding-bottom: 10px;
       
   }
-
   
   #tabelaCombate{
     border: 1px solid rgb(100, 100, 100);
@@ -293,25 +292,64 @@ th {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #000000;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 25%;
 }
 
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.modal-content h2 {
+  margin: 0;
+  margin-bottom: 10px;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+.modal-content header {
+  border-bottom: 1px solid #ddd;
 }
 
+#formularioModalEquipamentos {
+  padding: 5px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#formularioModalEquipamentos input {
+  border: none;
+  border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+.botoes {
+  margin-top: 10px;
+  height: 30px;
+  width: 120px;
+  border-radius: 5px;
+  border: 1px solid rgb(100, 100, 100);
+}
+
+.botoes:hover {
+  color: black;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.botaoAdicionar {
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 4px;
+}
+
+.botaoAdicionar:hover {
+  color: black;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
