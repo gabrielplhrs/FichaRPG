@@ -37,27 +37,27 @@
                 </div>
         </div>
         <div id="statusJogador">
-            <div id="playerPicAndDice">
-                <img class="circle-image" src="img/teste.png" />
-                <img class="d20-image-status" onclick="jogar()" src="img/d20.png"/>
-            </div>
-            <div id="playerLife">
+                <div id="playerPicAndDice">
+                    <img class="circle-image" src="img/teste.png" />
+                    <img class="d20-image-status" onclick="jogar()" src="img/d20.png"/>
+                </div>
+                <div id="playerLife">
                 <h3>Vida</h3>
                 <span id="lifeBar" class="life-progress-bar" ></span>
-                <input type="radio" id="lesaoGrave" value="Lesão Grave">
+                <input name="ferimentos" type="radio" id="lesaoGrave" value="Lesão Grave">
                 <label for="lesaoGrave">Lesão Grave</label>
-                <input type="radio" id="inconsciente" value="Inconsciente">
+                <input name="ferimentos" type="radio" id="inconsciente" value="Inconsciente">
                 <label for="inconsciente">Inconsciente</label>
-                <input type="radio" id="morrendo" value="Morrendo">
+                <input name="ferimentos" type="radio" id="morrendo" value="Morrendo">
                 <label for="morrendo">Morrendo</label>
             </div>
             <div id="playerSanity">
                 <h3>Sanidade</h3>
                 <label for="sanityBar"></label>
                 <span id="sanityBar" class="sanity-progress-bar" ></span>
-                <input type="radio" id="traumatizado" value="Traumatizado">
+                <input name="sanidade" type="radio" id="traumatizado" value="Traumatizado">
                 <label for="traumatizado">Traumatizado</label>
-                <input type="radio" id="enlouquecido" value="Enlouquecido">
+                <input name="sanidade" type="radio" id="enlouquecido" value="Enlouquecido">
                 <label for="enlouquecido">Enlouquecido</label>
             </div>
         </div>
@@ -123,6 +123,17 @@
                         <form action=""></form>
                     </div>
             </div>
+    </section>
+    <section>
+        <div id="tabelaCombate">
+            <header>
+                <h2>Combate</h2>
+                <button>+</button>
+            </header>
+                <div id="">
+                    <form action=""></form>
+                </div>
+        </div>
     </section>
 </body>
 </html>

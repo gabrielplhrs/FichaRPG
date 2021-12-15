@@ -21,7 +21,7 @@ body{
 }
 
 #detalhesPessoais, #statusJogador{
-    margin: 20px;
+    margin: 0px 12px 0px 12px;
 }
 
 #detalhesPessoais {
@@ -50,6 +50,10 @@ body{
 #formularioDetalhesPessoais label {
     margin-bottom: 4px;
     margin-top: 4px;
+}
+
+#formularioDetalhesPessoais select {
+  padding: 4px;
 }
 
 #statusJogador{
@@ -94,9 +98,17 @@ body{
     height: 50px;
 }
 
+.d20-image:hover {
+  cursor: pointer;
+}
+
 .d20-image-status{
   width: 75px;
   height: 75px;
+}
+
+.d20-image-status:hover {
+  cursor: pointer;
 }
 
 .life-progress-bar{
@@ -228,3 +240,27 @@ body{
       padding-bottom: 10px;
       
   }
+
+  
+  #tabelaCombate{
+    border: 1px solid rgb(100, 100, 100);
+    padding: 20px;
+    width: 720px;
+  }
+
+  #tabelaCombate header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      border: none;
+      border-bottom: 1px solid rgb(100, 100, 100);
+  }
+
+  #tabelaCombate h2{
+      margin: 0px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      
+  }
+
