@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Readex+Pro:wght@500&display=swap');
 
+:root {
+  --main-bg-color: black;
+}
+
 * {
     color: white;
-    background-color: black;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Readex Pro', sans-serif;
 }
 
 body{
+    background-color: var(--main-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,6 +44,7 @@ body{
 #detalhesPessoais input {
     border: none;
     border-bottom: 1px solid rgb(100, 100, 100);
+    background-color: var(--main-bg-color);
 }
 
 #formularioDetalhesPessoais {
@@ -54,6 +59,7 @@ body{
 
 #formularioDetalhesPessoais select {
   padding: 4px;
+  background-color: var(--main-bg-color);
 }
 
 #statusJogador{
@@ -218,6 +224,7 @@ body{
     width:40px;
     border: none;
     border-bottom: 1px solid rgb(100, 100, 100);
+    background-color: var(--main-bg-color);
   }
 
   #equipamentosEPertences{
@@ -292,7 +299,7 @@ th {
 
 /* Modal Content */
 .modal-content {
-  background-color: #000000;
+  background-color: var(--main-bg-color);
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -320,6 +327,7 @@ th {
 #formularioModalEquipamentos input {
   border: none;
   border-bottom: 1px solid rgb(100, 100, 100);
+  background-color: var(--main-bg-color);
 }
 
 .botoes {
@@ -328,10 +336,23 @@ th {
   width: 120px;
   border-radius: 5px;
   border: 1px solid rgb(100, 100, 100);
+  background-color: var(--main-bg-color);
 }
 
 .botoes:hover {
-  color: black;
+  color: var(--main-bg-color);
+  background-color: white;
+  transition: 0.4s;
+}
+
+.botaoApagar {
+  border: 1px solid rgb(100, 100, 100);
+  padding: 4px;
+  border-radius: 4px;
+  background-color: var(--main-bg-color);
+}
+
+.botaoApagar:hover {
   background-color: white;
   transition: 0.4s;
 }
@@ -339,10 +360,11 @@ th {
 .botaoAdicionar {
   border: 1px solid rgb(100, 100, 100);
   border-radius: 4px;
+  background-color: var(--main-bg-color);
 }
 
 .botaoAdicionar:hover {
-  color: black;
+  color: var(--main-bg-color);
   background-color: white;
   transition: 0.4s;
 }
