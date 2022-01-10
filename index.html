@@ -12,9 +12,11 @@
 <body>
     <header>
         <h1>Perfil do Jogador</h1>
-        <div id="resp"></div>
     </header>
     <section id="detalhesAndStatus">
+
+        <!-- FORMULARIO DE DETALHES PESSOAIS -->
+
         <div id="detalhesPessoais">
             <h2>Detalhes Pessoais</h2>
                 <div id="formularioDetalhesPessoais">
@@ -36,6 +38,9 @@
                     <input type="text">
                 </div>
         </div>
+
+        <!-- IMAGEM DE PERFIL E BARRAS DE VIDA E SANIDADE DO JOGADOR -->
+
         <div id="statusJogador">
                 <div id="playerPicAndDice">
                     <img class="circle-image" src="img/teste.png" />
@@ -61,7 +66,22 @@
                 <label for="enlouquecido">Enlouquecido</label>
             </div>
         </div>
+
+        <!-- MODAL D20 GENÉRICO -->
+
+        <div id="modalD20" class="modal">
+
+            <div class="modal-content">
+                <section>
+                    <span id="resp"></span>
+                    <div>
+                        <button id="botaoCancelarD20" class="botaoCancelar , botoes">Fechar</button>
+                    </div>
+                </section>
+            </div>
+        </div>
     </section>
+
     <section id="atributosAndEquipamentos">
         <div id="atributos">
             <header>
@@ -153,7 +173,7 @@
                         <label for="quantidade">Quantidade</label>
                         <input id="quantidade" type="number" value="">
                         <div>
-                            <button class="botaoCancelar , botoes">Cancelar</button>
+                            <button id="botaoCancelar" class="botaoCancelar , botoes">Cancelar</button>
                             <button class="botaoConfirmar , botoes">Confirmar</button>
                         </div>
                     </section>

@@ -5,42 +5,26 @@ function jogar()
 }
 
 var modal = document.getElementById("myModal");
+var modalD20 = document.getElementById("modalD20")
 
 var btn = document.getElementById("myBtn");
+var btnD20 = document.getElementById("playerPicAndDice")
 
-var cancelar = document.getElementsByClassName("botaoCancelar")[0];
+var cancelar = document.getElementById("botaoCancelar");
+var cancelarD20 = document.getElementById("botaoCancelarD20")
 
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
+btnD20.onclick = function() {
+  modalD20.style.display = "block";
+}
+
 cancelar.onclick = function() {
-  modal.style.display = "none";
+  modal.style.display = "none"
 }
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-function removeLinhaCombate(linha) {
-  var i=linha.parentNode.parentNode.rowIndex;
-  document.getElementById('combatTable').deleteRow(i);
-}
-
-function removeLinhaEquipamento(linha) {
-  var i=linha.parentNode.parentNode.rowIndex;
-  document.getElementById('equipamentTable').deleteRow(i);
-}
-
-function adicionarEquipamento() {
-  var table = document.getElementById("equipamentTable");
-  var row = table.insertRow(-1);
-  var cell1 = row.insertCell(0);
-  var cell2 = row.insertCell(1);
-  var cell3 = row.insertCell(2);
-  cell1.innerHTML = document.getElementById('equipamento').value;
-  cell2.innerHTML = document.getElementById('quantidade').value;
-  cell3.innerHTML = `<td><button class="botaoApagar" onclick='removeLinhaEquipamento(this)'><img src="img/delete.png" width="17px" height="17px"></button></td>`;
+cancelarD20.onclick = function() {
+  modalD20.style.display = "none";
 }
