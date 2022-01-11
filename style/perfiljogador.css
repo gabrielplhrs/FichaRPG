@@ -306,6 +306,10 @@ th {
   width: 25%;
 }
 
+#modal-combate-content {
+  width: 25%;
+}
+
 .modal-content h2 {
   margin: 0;
   margin-bottom: 10px;
@@ -315,7 +319,33 @@ th {
   border-bottom: 1px solid #ddd;
 }
 
+.modal-content label {
+  margin-top: 10px;
+}
+
+.modal-content input {
+  text-align: center;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 #formularioModalEquipamentos {
+  padding: 5px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#formularioModalCombate {
   padding: 5px;
   margin-top: 10px;
   display: flex;
@@ -339,8 +369,14 @@ th {
   background-color: var(--main-bg-color);
 }
 
+#formularioModalCombate input {
+  border: none;
+  border-bottom: 1px solid rgb(100, 100, 100);
+  background-color: var(--main-bg-color);
+}
+
 .botoes {
-  margin-top: 10px;
+  margin-top: 20px;
   height: 30px;
   width: 120px;
   border-radius: 5px;

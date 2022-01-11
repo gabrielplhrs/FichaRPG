@@ -151,11 +151,6 @@
                               <td>1</td>
                               <td><button class="botaoApagar" onclick='removeLinhaEquipamento(this)'><img src="img/delete.png" width="17px" height="17px"></button></td>
                             </tr>
-                            <tr>
-                              <td>Corda</td>
-                              <td>1</td>
-                              <td><button class="botaoApagar" onclick='removeLinhaEquipamento(this)'><img src="img/delete.png" width="17px" height="17px"></button></td>
-                            </tr>
                           </table>
                         
                     </div>
@@ -185,7 +180,7 @@
         <div id="tabelaCombate">
             <header>
                 <h2>Combate</h2>
-                <button class="botaoAdicionar , botaoAdicionarCombate">+</button>
+                <button id="botaoAdicionarCombate" class="botaoAdicionar , botaoAdicionarCombate">+</button>
             </header>
                 <div id="">
                     <table id="combatTable">
@@ -207,17 +202,42 @@
                           <td></td>
                           <td><button class="botaoApagar" onclick='removeLinhaCombate(this)'><img src="img/delete.png" width="17px" height="17px"></button></td>
                         </tr>
-                        <tr>
-                          <td>Pistola</td>
-                          <td>88</td>
-                          <td></td>
-                          <td>15</td>
-                          <td>23</td>
-                          <td></td>
-                          <td><button class="botaoApagar" onclick='removeLinhaCombate(this)'><img src="img/delete.png" width="17px" height="17px"></button></td>
-                        </tr>
                       </table>
                 </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="modalCombate" class="modal">
+            <!-- Modal content -->
+            <div id="modal-combate-content" class="modal-content">
+                <header>
+                    <h2>Adicionar arma</h2>
+                </header>
+                <section id="formularioModalCombate">
+                    <label for="arma">Equipamento</label>
+                    <input id="arma" type="text" value="">
+
+                    <label for="valores">Valores</label>
+                    <input id="valores" type="text" value="">
+
+                    <label for="dano">Dano</label>
+                    <input id="dano" type="number" value="">
+
+                    <label for="municaoAtual">Munição atual</label>
+                    <input id="municaoAtual" type="number" value="">
+
+                    <label for="municaoMaxima">Munição máxima</label>
+                    <input id="municaoMaxima" type="number" value="">
+
+                    <label for="valores">Ataques</label>
+                    <input id="valores" type="number" value="">
+
+                    <div>
+                        <button id="botaoCancelarCombate" class="botaoCancelar , botoes">Cancelar</button>
+                        <button id="botaoConfirmarCombate" class="botaoConfirmar , botoes">Confirmar</button>
+                    </div>
+                </section>
+            </div>
         </div>
     </section>
     <script src="scripts/script.js"></script>
