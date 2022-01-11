@@ -31,7 +31,8 @@ body{
 #detalhesPessoais {
     border: 1px solid rgb(100, 100, 100);
     padding: 20px;
-    width: 300px;
+    margin-right: 25px;
+    width: 318px;
 }
 
 #detalhesPessoais h2 {
@@ -189,6 +190,10 @@ body{
     padding: 20px;
   }
 
+  #atributos input {
+    text-align: center;
+  }
+
   #atributos h2{
     margin: 0px;
   }
@@ -245,7 +250,6 @@ body{
       margin: 0px;
       padding-right: 10px;
       padding-bottom: 10px;
-      
   }
   
   #tabelaCombate{
