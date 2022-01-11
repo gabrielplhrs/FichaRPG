@@ -324,6 +324,15 @@ th {
   align-items: center;
 }
 
+#respostaModalD20 {
+  padding: 5px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #formularioModalEquipamentos input {
   border: none;
   border-bottom: 1px solid rgb(100, 100, 100);
@@ -373,5 +382,5 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+outline: none;
 }

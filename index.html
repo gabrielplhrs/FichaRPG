@@ -44,7 +44,7 @@
         <div id="statusJogador">
                 <div id="playerPicAndDice">
                     <img class="circle-image" src="img/teste.png" />
-                    <img class="d20-image-status" onclick="jogar()" src="img/d20.png"/>
+                    <div id="d20-img"><img class="d20-image-status" onclick="jogar()" src="img/d20.png"/></div>
                 </div>
                 <div id="playerLife">
                 <h3>Vida</h3>
@@ -72,7 +72,7 @@
         <div id="modalD20" class="modal">
 
             <div class="modal-content">
-                <section>
+                <section id="respostaModalD20">
                     <span id="resp"></span>
                     <div>
                         <button id="botaoCancelarD20" class="botaoCancelar , botoes">Fechar</button>

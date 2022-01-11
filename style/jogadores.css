@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Readex+Pro:wght@500&display=swap');
 
-* {
-    color: white;
-    background: black;
+* { 
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Readex Pro', sans-serif;
 }
 
 body{
+    color: white;
+    background: black;  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +27,7 @@ h2, h3{
 }
 
 .jogadores {
-    border: 1px solid rgb(99, 99, 99);
+    border: 1px solid rgb(158, 158, 158);
     border-radius: 10px;
     padding: 40px;
     display: flex;
@@ -37,6 +37,10 @@ h2, h3{
     margin: 10px;
     max-width: 300px;
     max-height: 150px;
+}
+
+.jogadores:hover {
+    background: rgb(99, 99, 99);
 }
 
 .jogadores h2{

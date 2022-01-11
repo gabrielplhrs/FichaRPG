@@ -8,7 +8,7 @@ var modal = document.getElementById("myModal");
 var modalD20 = document.getElementById("modalD20")
 
 var btn = document.getElementById("myBtn");
-var btnD20 = document.getElementById("playerPicAndDice")
+var btnD20 = document.getElementById("d20-img")
 
 var cancelar = document.getElementById("botaoCancelar");
 var cancelarD20 = document.getElementById("botaoCancelarD20")
