@@ -1,5 +1,5 @@
-# Ficha de rpg
-### Ficha de RPG baseada no RPG Ordem Paranormal
+![Rpg Sheet](https://user-images.githubusercontent.com/60354322/154341810-e6df3244-59fd-41f7-a342-aa7c2bd05988.png)
+
 
 ## Próximas implementações
 - função desmarcar radio button
