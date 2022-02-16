@@ -30,7 +30,6 @@ Podemos considerar este projeto como sendo divido em três partes:
 
 - Back End (pasta server)
 - Front End (pasta web)
-- 
 💡Para a aplicação funcionar, é necessário que o Back End esteja sendo executado.
 
 ## 📝 Licença
