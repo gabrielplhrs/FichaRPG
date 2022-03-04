@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/pagina-inicial.css">
+    <link rel="icon" href="img/icons8-icosaedro-50.png">
     <title>Suas Campanhas</title>
 </head>
 <body>
@@ -13,13 +14,56 @@
     </header>
 
     <section>
-        <div id="campanhas">
-            <div id="campanha" class="campanha">
-                <img src="" alt="">
-                <p>Campanha nome</p>
-                <p>sistema</p>
-                <p>numero jogadores</p>
+        <div id="campaigns">
+
+            <div id="" class="campaign">
+                <img class="imgCampaign" src="img/example1.jpg" alt="">
+                <h3 class="tituloCampanha">A revolta dos elfos</h3>
+                <p>Gabriel</p>
+                <div class="divNumberPlayers">
+                    <img class="userSvg" src="img/user-svgrepo-com.svg" alt="">
+                    <p>4</p>
+                </div>
             </div>
+
+            <div id="" class="campaign">
+                <img class="imgCampaign" src="img/example2.jpg" alt="">
+                <h3 class="tituloCampanha">A volta dos que não foram</h3>
+                <p>Enzo</p>
+                <div class="divNumberPlayers">
+                    <img class="userSvg" src="img/user-svgrepo-com.svg" alt="">
+                    <p>6</p>
+                </div>
+            </div>
+
+            <p id="newCampaignButton">+</p>
+
+            <div id="myModal" class="modal">
+
+                <div class="modal-content">
+                    <header id="modalHeader">
+                        <span class="close">&times;</span>
+                    </header>
+
+                    <section id="modalSection">
+
+                        <div id="EnterCampaignModal">
+                            <h2>Entrar em uma campanha</h2>
+                            <input placeholder="Código Campanha" type="text">
+                            <button>Entrar</button>
+                        </div>
+
+                        <span>ou</span>
+
+                        <div id="newCampaignModal">
+                            <h2>Deseja começar uma nova campanha ?</h2>
+                            <button>Vamos lá</button>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+
         </div>
     </section>
 

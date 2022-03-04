@@ -1,5 +1,148 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Readex+Pro:wght@500&family=Roboto:wght@500&display=swap');
 
-body {
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
+    user-select: none;
 }
+
+body {
+    background-color: #181818;
+    color: #fff;
+}
+
+header h1 {
+    margin: 16px;
+}
+
+#campaigns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.userSvg {
+    width: 16px;
+    filter: invert(99%) sepia(5%) saturate(130%) hue-rotate(102deg) brightness(121%) contrast(100%);
+}
+
+.campaign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 16px;
+    max-width: 240px;
+    max-height: 280px;
+}
+
+.campaign:hover {
+    border: 1px solid #DF362D;
+    cursor: pointer;
+}
+
+.tituloCampanha {
+    display: flex;
+    text-align: center;
+    margin: 8px;
+}
+
+.campaign p {
+    margin: 4px;
+}
+
+#newCampaignButton {
+    font-size: 4em;
+    border: none;
+    padding: 0;
+    background: none;
+    margin: 16px;
+}
+
+.divNumberPlayers {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+#newCampaignButton:hover {
+    color: #DF362D;
+}
+
+.imgCampaign {
+    height: 88px;
+    width: 124px;
+    border-radius: 4px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #181818;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #modalHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #modalSection {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+  } 
+
+  #newCampaignModal, #EnterCampaignModal {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  #newCampaignModal h2, #EnterCampaignModal h2 {
+      margin-bottom: 16px;
+  }
+
+  #EnterCampaignModal button {
+      margin: 16px;
+  }
