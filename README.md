@@ -2,7 +2,7 @@
 
 
 ## 💻 Sobre o projeto
-🧙 Tormenta20 RPG Sheet - é uma aplicação web onde os usuários podem se 
+🧙 Tormenta20 RPG Sheet - é uma aplicação web onde:
 
 Os usuários poderão se cadastrar na plataforma e:
 - Criar mesas
