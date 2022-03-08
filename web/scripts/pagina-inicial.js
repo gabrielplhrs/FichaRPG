@@ -1,7 +1,5 @@
 var modal = document.getElementById("myModal");
-
 var btn = document.getElementById("newCampaignButton");
-
 var span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
