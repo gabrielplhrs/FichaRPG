@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Readex+Pro:wght@500&family=Roboto:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: #181818;;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+}
+
+header p {
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+section, #buttonDiv, #login, #password {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#login, #password {
+    padding: 8px;
+}
+
+#login input, #password input {
+    width: 240px;
+    height: 32px;
+    padding-left: 8px;
+}
+
+#buttonForgotPassword {
+    border: none;
+    color: orange;
+    background: none;
+    font-size: 12px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+#buttonLogin {
+    width: 240px;
+    height: 32px;
+    margin: 8px;
+}
+
+#registerButton {
+    color: orange;
+    border: none;
+    background: none;
+    transition: 0.4s;
+}
+
+#registerButton:hover {
+    cursor: pointer;
+    color: rgb(97, 92, 82);
+}
+
+#registerP {
+    font-size: 12px;
+}
+
+#boxLogin {
+    background-color: #242424;
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 12vh;
+}
+
+#titlePage {
+    margin-top: 16vh;
+}
