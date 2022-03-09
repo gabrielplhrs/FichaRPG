@@ -103,6 +103,7 @@ header h1 {
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px;
   }
   
   /* The Close Button */
@@ -131,7 +132,21 @@ header h1 {
       align-items: center;
       justify-content: space-around;
       flex-direction: row;
-  } 
+      text-align: center;
+  }
+
+  #modalSection button {
+      color: white;
+      padding: 8px;
+      background-color: #181818;
+      border: 1px solid white;
+      border-radius: 4px;
+  }
+
+  #modalSection input {
+      padding: 4px;
+  }
+
 
   #newCampaignModal, #EnterCampaignModal {
       display: flex;
