@@ -22,6 +22,7 @@ header h1 {
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
+    max-width: 100vw;
 }
 
 .userSvg {
@@ -70,6 +71,7 @@ header h1 {
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
+    margin-bottom: 4px;
 }
 
 #newCampaignButton:hover {
