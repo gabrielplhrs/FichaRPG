@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Readex+Pro:wght@500&family=Roboto:wght@500&display=swap');
 
+:root {
+    --cor-principal: #181818;
+    --cor-secundaria: #242424;
+    --cor-terciaria: #5865F2;
+    --cor-fonte: white;
+  }
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +17,7 @@
 
 body {
     background-color: #181818;
-    color: #fff;
+    color: var(--cor-fonte);
 }
 
 header h1 {
@@ -41,10 +48,12 @@ header h1 {
     margin: 16px;
     max-width: 240px;
     max-height: 280px;
+    transition: 0.4s;
 }
 
 .campaign:hover {
-    border: 1px solid #DF362D;
+    background-color: var(--cor-terciaria);
+    border: 1px solid var(--cor-terciaria);
     cursor: pointer;
 }
 
@@ -75,7 +84,7 @@ header h1 {
 }
 
 #newCampaignButton:hover {
-    color: #DF362D;
+    color: var(--cor-terciaria);
     cursor: pointer;
 }
 
@@ -100,17 +109,17 @@ header h1 {
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #181818;
+    background-color: var(--cor-principal);
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid var(--cor-secundaria);
     width: 80%; /* Could be more or less, depending on screen size */
     max-width: 600px;
   }
   
   /* The Close Button */
   .close {
-    color: #aaa;
+    color: var(--cor-secundaria);
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -118,7 +127,7 @@ header h1 {
   
   .close:hover,
   .close:focus {
-    color: black;
+    color: var(--cor-terciaria);
     text-decoration: none;
     cursor: pointer;
   }
@@ -138,17 +147,28 @@ header h1 {
   }
 
   #modalSection button {
-      color: white;
+      color: var(--cor-fonte);;
       padding: 8px;
       background-color: #181818;
-      border: 1px solid white;
+      border: 1px solid var(--cor-fonte);
       border-radius: 4px;
+      transition: 0.4s;
+  }
+
+  #modalSection button:hover {
+      /* color: var(--cor-terciaria);  */
+      border-color: var(--cor-terciaria);
+      background-color: var(--cor-terciaria);
+      cursor: pointer;
   }
 
   #modalSection input {
       padding: 4px;
+      background-color: var(--cor-secundaria);
+      border: 1px solid black;
+      border-radius: 4px;
+      color: var(--cor-fonte);
   }
-
 
   #newCampaignModal, #EnterCampaignModal {
       display: flex;
