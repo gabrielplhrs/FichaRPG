@@ -4,35 +4,35 @@
 ## 💻 Sobre o projeto
 🧙 Tormenta20 RPG Sheet - its a web aplication where:
 
-Os usuários poderão se cadastrar na plataforma e:
-- Criar mesas
-- Participar mesas criadas por outros jogadores
-- Criar personagens para jogar em mesas/campanhas criadas por outros jogadores
+The users will be able to:
+- Make new campaigns
+- Participate in campaigns created by other masters
+- Make characters to play in campaigns of other masters
 
-Projeto desenvolvido por mim, baseado no sistema de RPG criado por  Marcelo Cassaro, Rogério Saladino e JM Trevisan, TORMENTA20.
+Project developed by me, based on the RPG system created by Marcelo Cassaro, Rogério Saladino and JM Trevisan, TORMENTA20.
 
 ## 🎨 Layout
-O layout da aplicação está disponível no Figma:
+The application layout is available in Figma:
 link
 imagens
 
-## 🛠 Tecnologias
-As seguintes ferramentas foram usadas na construção do projeto:
+## 🛠 Stack
+The following tools were used in building the project:
 
 - Figma
 - Angular
-- NodeJS
 - Typescript
 - .NET Core
 
-## 🚀 Como executar o projeto
-Podemos considerar este projeto como sendo divido em três partes:
+## 🚀 How to start the project
+The project is separate in two parts:
 
-- Back End (pasta server)
-- Front End (pasta web)
-💡Para a aplicação funcionar, é necessário que o Back End esteja sendo executado.
+- Back End (directory server)
+- Front End (directory web)
+💡For the application work, the Back End must be running.
+
 
 ## 📝 Licença
-Este projeto esta sobe a licença MIT.
+This project is under the MIT license.
 
-Feito com :purple_heart: por Gabriel Palhares
+Maded by :purple_heart: por Gabriel Palhares
