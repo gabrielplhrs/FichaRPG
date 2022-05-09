@@ -1,7 +1,7 @@
 ![Rpg Sheet](https://user-images.githubusercontent.com/60354322/154341810-e6df3244-59fd-41f7-a342-aa7c2bd05988.png)
 
 
-## 💻 Sobre o projeto
+## 💻 About the project
 🧙 Tormenta20 RPG Sheet - its a web aplication where:
 
 The users will be able to:
@@ -32,7 +32,7 @@ The project is separate in two parts:
 💡For the application work, the Back End must be running.
 
 
-## 📝 Licença
+## 📝 License
 This project is under the MIT license.
 
 Maded by :purple_heart: por Gabriel Palhares
