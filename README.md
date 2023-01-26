@@ -2,7 +2,7 @@
 
 
 ## 💻 About the project
-🧙 Tormenta20 RPG Sheet - its a web aplication where:
+🧙 Tormenta20S - its a web aplication where:
 
 The users will be able to:
 - Make new campaigns
